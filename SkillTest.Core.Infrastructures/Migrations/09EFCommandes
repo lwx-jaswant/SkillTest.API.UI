@@ -1,0 +1,17 @@
+﻿----- EF
+ dotnet ef migrations list
+ dotnet ef --project ..\SkillTest.Core.Infrastructures\ migrations add MigrationName --context SkillTestDBContext
+ dotnet ef  database update
+
+ // remove last ko migration 
+  dotnet ef --project ..\SkillTest.Core.Infrastructures\ migrations remove  --context SkillTestDBContext
+
+ // remove (Roleback) migration (deja exacuté)
+ dotnet ef  database update lastGoodMigration 
+ -> toute les migration apres lastGoodMigrationseront sont down (rolbacké) et seront en pending
+ -> puis suprimer la derniere migration qui est en panding 
+ dotnet ef --project ..\SkillTest.Core.Infrastructures\ migrations remove  --context SkillTestDBContext
+
+
+
+
