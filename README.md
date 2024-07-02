@@ -1,6 +1,6 @@
 #Config Database (Code first):
 In appsetigs.json cofigure your ConnectionStrings (use empty Database, EF code first will create tabes)
-or create a new SQL Server DB with name : envato.db.dev
+or create a new SQL Server DB with name : Testdb.db.dev
 
 #Rus Migration to generate SQL DB Scripte and create DB table
 on the Visual Stidio 2022 open terminal an run : 
